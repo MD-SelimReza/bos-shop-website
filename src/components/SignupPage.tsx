@@ -258,7 +258,7 @@ const SignupPage = () => {
   const onSubmit = async (data: FormData) => {
     setLoading(true);
     setServerError("");
-    console.log("Form data -->", data);
+    // console.log("Form data -->", data);
   
     try {
       // ✅ Create user first via signup API

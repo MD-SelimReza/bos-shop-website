@@ -14,8 +14,8 @@ const DashboardLayoutWrapper = ({
   }>) => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { user, loading, error } = useSessionUser();
-  console.log(user, loading, error);
+  const { user } = useSessionUser();
+  // console.log(user, loading, error);
 
   // if (loading) {
   //   return <p className="text-center py-10">Loading user...</p>;

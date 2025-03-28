@@ -16,7 +16,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ isSidebarOpen, handleToggleSi
   const sidebarRef = useRef<HTMLDivElement>(null);
   const [openMenus, setOpenMenus] = useState<string[]>(['Elevation Church', 'Holly Furtick']);
   const { user, loading } = useSessionUser(); // 👈 grab user and loading state
-  console.log(user); // 👈 log user to console
+  // console.log(user); // 👈 log user to console
   
   const toggleMenu = (menu: string) => {
     setOpenMenus((prev) =>

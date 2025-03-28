@@ -23,7 +23,7 @@ export async function PATCH(req: NextRequest) {
     // Get the incoming data
     const data: UpdateProfilePayload = await req.json();
 
-    console.log("Incoming update data:", data);
+    // console.log("Incoming update data:", data);
 
     const session = await getServerSession(authOptions);
 
@@ -59,7 +59,7 @@ export async function PATCH(req: NextRequest) {
       user: updatedUser,
     });
   } catch (error) {
-    console.error("Error updating profile:", error);
+    // console.error("Error updating profile:", error);
 
     if (error instanceof Error) {
         return NextResponse.json(

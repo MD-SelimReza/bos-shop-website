@@ -8,8 +8,8 @@ import { useSessionUser } from '@/hooks/useSessionUser';
 import Image from 'next/image';
 
 const ProfilePage = () => {
-  const { user, loading, error } = useSessionUser();
-  console.log(user, loading, error);
+  const { user } = useSessionUser();
+  // console.log(user, loading, error);
 
   return (
     <div className=" bg-gray-100 flex items-center justify-center p-4">
