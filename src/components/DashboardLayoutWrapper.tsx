@@ -14,12 +14,12 @@ const DashboardLayoutWrapper = ({
   }>) => {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { user } = useSessionUser();
+  const { user, loading } = useSessionUser();
   // console.log(user, loading, error);
 
-  // if (loading) {
-  //   return <p className="text-center py-10">Loading user...</p>;
-  // }
+  if (loading) {
+    return <p className="text-center py-10 flex justify-center items-center min-h-screen">Loading user...</p>;
+  }
 
   // if (error) {
   //   return <p className="text-center text-red-500 py-10">Error: {error}</p>;
