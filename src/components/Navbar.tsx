@@ -140,7 +140,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center w-full mx-auto px-8 transition-all duration-500">
           <Link href={"/"}>
             <div className="flex items-center">
-              <Image src="/logo.png" alt="Shop Logo" width={80} height={80} />
+              <Image src="/Logo.png" alt="Shop Logo" width={80} height={80} />
             </div>
           </Link>
           <div className="flex items-center gap-6 text-sm text-gray-600">
